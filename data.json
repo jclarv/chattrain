@@ -1,0 +1,133 @@
+{"intents": [
+        {"tag": "Intro",
+         "patterns": ["Hello", "Hi","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, can i first take your name?", "Hi, what is your name please?"],
+         "context": ["name"]
+        },
+   {"tag": "name",
+         "patterns": ["I am","my name is","John"],
+         "responses": ["thankyou, in case we get cut off, can i please take your email address?"],
+         "context": ["email"]
+        },
+   {"tag": "email",
+         "patterns": ["@"],
+         "responses": ["Great, how can I help you today", "Thankyou, how can I help you today"],
+         "context": [""]
+        },
+    {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+    {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+    {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+    {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can give you information on Jess Dubai, such as information on curriculum, admissions and careers"  ,"I'm here to answer any questions you may have about Jess Dubai" ],
+         "context": [""]
+        },
+    {"tag": "about jess",
+         "patterns": ["tell me about Jess", "what is jess?", "what is Jess?", "What is Jess Dubai?", "Tell me about Jess Dubai" ],
+         "responses": ["JESS Dubai is rated by the Knowledge & Human Development Authority (KHDA) as an Outstanding School. We are an inclusive School, and we actively welcome applications from students with different strengths and areas for development. All students will be supported fully if successful. Where a child has a particular learning need that would affect their ability to access the full curriculum, the capacity of both the School and Learning Support Department to support the student will be considered as a factor as to whether a place at JESS Dubai can be offered. This will often follow consultation with the applicant’s previous school. "],
+         "context": [""]
+        },
+    {"tag": "Curriculum",
+         "patterns": ["What curriculum does Jess follow?", "tell me about the curriculum", "curriculum", "which curriculum do you use?" ],
+         "responses": ["JESS Dubai follows  the National Curriculum of England until Year 11.  We then follow the IB International Baccalaureate Programme in Year 12 and 13 which in turn give students access to universities throughout the world."],
+         "context": [""]
+        },
+    {"tag": "ages",
+         "patterns": ["what is the age of students?","what ages are you students", "how old are you students?","what is the age range?","what ages?" ],
+         "responses": ["The student body ranges from the age of 3 to 10 years starting from Foundation Stage 1 (FS1) to Year 6 at JESS Jumeirah.The student body ranges from the age of 3 to 17 years starting from Foundation Stage 1 (FS1) to Year 13 at JESS Arabian Ranches."],
+         "context": [""]
+        },
+    {"tag": "nationalities",
+         "patterns": ["where are your students from?","what are the nationalities of students?","what countries are you students from?"],
+         "responses": ["JESS Dubai is an International school with over 70 different nationalities are represented."],
+         "context": [""]
+        },
+    {"tag": "Teaching staff at JESS Dubai",
+         "patterns": ["Where are your teachers from?", "tell me about your teachers", "teachers", "staff", "tell me about your staff" ],
+         "responses": ["All teaching staff are fully qualified and the majority are UK trained."],
+         "context": [""]
+        },
+    {"tag": "JESS Dubai Locations",
+         "patterns": ["Where is Jess Dubai?","where are you?","where is jess?"],
+         "responses": ["ESS Dubai has two locations, The the JESS Jumeirah campus in s in Al Safa 1, which and houses Primary year groups from FS1 to Year 6 and the JESS Arabian Ranches campus which houses Primary and Secondary year groups which is within the Arabian Ranches 1 community."],
+         "context": [""]
+        },
+    {"tag": "Apply",
+         "patterns": ["How do I apply for Jess?", "what i need to apply?", "How do i apply?", "what is the process for applying?", "What is the applications process?" ],
+         "responses": ["The first step is to check that you have everything we need, are you a resident of The UAE"],
+         "context": ["Res"]
+        },
+   {"tag": "Res",
+         "patterns": ["no"],
+         "responses": ["i cant help"],
+         "context": ["Res"]
+        },
+    {"tag": "minimum age",
+         "patterns": ["What is the minimum age requirement to enroll into the FS1 programme","what is the age for FS1?"],
+         "responses": ["The applicant should be 3 years of age on or before 31 August of an academic year to be eligible to apply for FS1 entry in September. For example, if your child turns 3 on or before 31 August, he or she would be age appropriate to be considered for a September entry that year."],
+         "context": [""]
+        },
+    {"tag": "Residence Permit ",
+         "patterns": ["what permits do i need?","do i need a residence permit?"],
+         "responses": ["All students wishing to enroll at JESS Dubai must have a valid Residence Visa for Dubai. A copy of the Residence Visa must be provided to the School for Registration with KHDA."],
+         "context": [""]
+        },
+    {"tag": "assessments ",
+         "patterns": ["is there an assessment","what is the assessment criteria?","does my child need an assesment?"],
+         "responses": ["Yes, entrance assessments are required for entry to JESS Dubai. The entrance assessment is to ensure that the student meets the entry requirements and that the teaching and curriculum offered match the student’s needs. All students applying for entry to the JESS Dubai will only be invited for an entrance assessment if the School is likely to offer a place in the future.  In the event of a place not being available, the prospective pupil’s name is carried forward to the waiting list until such time as he/she can be accommodated, or his/her name is withdrawn. "],
+         "context": [""]
+         },
+    {"tag": "waiting list ",
+         "patterns": ["is there a waiting list?", "how does the waiting list work?","tell me about the waiting list?"],
+         "responses": ["Applicants successful at the entrance assessment are offered places if there are immediate vacancies or placed onto the waiting list for future intakeadmisisons. The waiting list is rank ordered as per our Admission Policy.  With each new round of assessments, additional students may be added.  Parents are always notified in writing, normally within two weeks from the assessment date.  Because of this fluidity, the admissions office is unable to provide parents with a specific number or ranking on the waiting list. Re-assessments are not offered to attempt to improve positions on the waiting list. "],
+         "context": [""]
+         },
+    {"tag": "application length? ",
+         "patterns": ["how long does an application stay active?"],
+         "responses": ["Applications submitted stay on our waiting list until we are able to offer a place or until instruction from a parent to withdraw. However, if a waiting list update is carried out and no communication is received we will assume that there is no longer an interest and the application will be withdrawn. "],
+         "context": [""]
+         },
+    {"tag": "Corporate Debentures ",
+         "patterns": ["are there corporate debentures?","corporate debentures?","tell me about corporate debentures"],
+         "responses": ["Companies that invested in JESS Dubai hold Corporate Debentures with the School.  Corporate Debentures are no longer for sale.  It is the applicant’s responsibility to enquire with the company that he/she is employed with, if Debentures are available and if they are eligible prior to the application being submitted. Additionally, the School will require a confirmation email from the applicant’s employer "],
+         "context": [""]
+        },
+    {"tag": "Personal Debentures ",
+         "patterns": ["are there personal debentures?","how much are personal debentures?","personal debentures"],
+         "responses": ["A Personal Debenture of AED 20 000 per student will be required prior to a student joining the School to secure a place.  The Personal Debenture is refundable once the student leaves the School. "],
+         "context": [""]
+        },
+    {"tag": "bus",
+         "patterns": ["are there a bus service?","do you have a bus?","bus service"],
+         "responses": ["JESS Dubai does not offer a school bus service to primary students.  We do offer a limited service to our secondary students. For more information regarding our bus service please contact our Academic Secretary, Mrs Wendy Brownlee wbrownlee@jess.sch.ae "],
+         "context": [""]
+          },
+    {"tag": "transcript",
+         "patterns": ["can i obtain a transcript?","can i get a transcript?","academic transcript"],
+         "responses": ["A transcript is issued when requested by prospective schools in the USA only. Please contact our Academic Secretary, Mrs Wendy Brownlee wbrownlee@jess.sch.ae for Year 7 to 11.  Transcripts are normally issued within 3 working days from date of request.  Transcripts are and are issued free of cost.  To obtain a transcript to support University applications, please contact our University CouncilorCounsellor, Mrs Josie Campbell jcampbell@jess.sch.ae . Transcripts are normally issued within 3 working days from the date of request. A and a courier fee may be applicable."],
+         "context": [""]
+          },
+    {"tag": "attendance letter",
+         "patterns": ["how can i get an attendance letter?","I need an attendance letter","how do i get an attendance letter?"],
+         "responses": ["To obtain a standard student attendance letter, please contact please contact our Academic Secretary, Mrs Wendy Brownlee wbrownlee@jess.sch.ae .  For Sixth Form please contact our Sixth Form Administrator, Mrs Sam Henderson Shenderson@jess.sch.ae .These letters are normally issued within 3 working days from the date of request and are. Attendance letters are issued free of cost."],
+         "context": [""]
+          },
+    {"tag": "Close",
+         "patterns": [""],
+         "responses": ["Farts"],
+         "context": [""]
+          }
+]
+}
